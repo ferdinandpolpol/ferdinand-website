@@ -1,0 +1,10 @@
+server: "3.7"
+
+services:
+  frontend:
+    build: ./frontend
+    volumes:
+      - ./frontend:/code
+    ports:
+      - 3000:3000
+    command: npm start
